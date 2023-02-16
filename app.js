@@ -54,7 +54,7 @@ function displayWeather(data) {
     cityName.textContent = name;
     weatherIcon.src = `assets/${icon}.svg`
 
-
+    description = description.charAt(0).toUpperCase() + description.slice(1);
     weatherDescription.textContent = description;
     currentTemperature.textContent = `${Math.round(temp)}°C`;
     windSpeed.textContent = `${Math.round(speed * 3.6)}Km`;
